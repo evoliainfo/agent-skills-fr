@@ -8,22 +8,22 @@ Des compétences métier en français pour les assistants IA : instructions, mé
 
 ## Télécharger
 
-**[Pack Finance complet (ZIP)](distribution_RC3_MIT/Pack_Finance_RC3.zip)** · **[Guide d'installation (PDF)](distribution_RC3_MIT/Guide_installation_et_utilisation_Finance.pdf)**
+**[Pack Finance complet (ZIP)](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Pack_Finance_RC3.zip)** · **[Guide d'installation (PDF)](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Guide_installation_et_utilisation_Finance.pdf)**
 
-Sur la page du fichier GitHub, utilisez l'option de téléchargement. Décompressez le pack complet pour retrouver les cinq ZIP individuels ; ne les décompressez pas pour l'import natif dans Claude.
+Les liens de téléchargement ci-dessus et dans le tableau permettent de récupérer les fichiers directement. Aucun compte GitHub ni aucune connaissance informatique ne sont nécessaires. Décompressez uniquement le pack complet pour retrouver les cinq ZIP individuels ; conservez ces derniers au format ZIP pour l'import dans Claude.
 
 | Compétence | Ce qu'elle aide à faire | ZIP individuel |
 |---|---|---|
-| Analyse financière | SIG, CAF, BFR, FRNG, ratios et diagnostic | [Télécharger](distribution_RC3_MIT/Analyse_financiere_RC3.zip) |
-| Contrôle budgétaire | Comparer budget et réalisé, expliquer les écarts | [Télécharger](distribution_RC3_MIT/Controle_budgetaire_RC3.zip) |
-| Prévision de trésorerie | Projeter les flux et simuler les tensions de liquidité | [Télécharger](distribution_RC3_MIT/Prevision_de_tresorerie_RC3.zip) |
-| Analyse de rentabilité | Analyser marges, coûts, seuils et décisions | [Télécharger](distribution_RC3_MIT/Analyse_de_rentabilite_RC3.zip) |
-| Reporting financier | Produire une synthèse de gestion et des KPI | [Télécharger](distribution_RC3_MIT/Reporting_financier_RC3.zip) |
+| Analyse financière | SIG, CAF, BFR, FRNG, ratios et diagnostic | [Télécharger](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Analyse_financiere_RC3.zip) |
+| Contrôle budgétaire | Comparer budget et réalisé, expliquer les écarts | [Télécharger](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Controle_budgetaire_RC3.zip) |
+| Prévision de trésorerie | Projeter les flux et simuler les tensions de liquidité | [Télécharger](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Prevision_de_tresorerie_RC3.zip) |
+| Analyse de rentabilité | Analyser marges, coûts, seuils et décisions | [Télécharger](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Analyse_de_rentabilite_RC3.zip) |
+| Reporting financier | Produire une synthèse de gestion et des KPI | [Télécharger](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Reporting_financier_RC3.zip) |
 
 ## Commencer
 
-1. Choisissez la compétence adaptée à votre demande.
-2. Consultez le [guide PDF](distribution_RC3_MIT/Guide_installation_et_utilisation_Finance.pdf) et suivez le parcours adapté à votre compte.
+1. Téléchargez le pack complet ou le Skill de votre choix.
+2. Consultez le [guide PDF](https://github.com/evoliainfo/agent-skills-fr/releases/download/finance-v1.0.0-rc3-mit/Guide_installation_et_utilisation_Finance.pdf) et suivez le parcours adapté à votre compte.
 3. Fournissez vos documents autorisés et formulez votre demande.
 4. Vérifiez les sources, hypothèses, calculs et conclusions.
 
