@@ -1,0 +1,10 @@
+# Fiabilité des données et rapprochements
+
+1. Identifier le grain de chaque source (écriture, compte/mois, client, total de segment). Exclure les sous-totaux si les détails sont déjà présents. Vérifier les filtres, lignes masquées, formules et cellules en erreur. Un blanc n'est pas un zéro.
+2. Normaliser les montants en devise et unité homogènes. Les charges peuvent être positives dans un export de gestion ou négatives dans un compte de résultat signé : adopter une convention explicite. Ne pas convertir automatiquement HT en TTC avec un taux unique. Ne pas agréger des monnaies sans taux et méthode de conversion documentés.
+3. Rapprocher le CA, les charges et le résultat aux totaux comptables fournis. Pour les marges, préciser coûts inclus et exclus. Pour une vue par segment, vérifier que les segments forment une partition et traiter explicitement les éléments non alloués. Les frais communs ne doivent pas être attribués sans clé justifiée.
+4. Pour les soldes, vérifier date, périmètre et rapprochement : trésorerie initiale + encaissements − décaissements = trésorerie finale (ajuster pour change et autres mouvements justifiés). Pour les créances, vérifier balance âgée contre grand livre si disponible. Ne jamais déduire les flux de trésorerie de la seule variation des comptes bancaires si des flux internes ou changes existent.
+5. Clôture : identifier écritures de cut-off, factures non parvenues, produits à recevoir, provisions, stocks et amortissements non finalisés. Signaler leur effet connu ou non quantifié. Ne pas passer d'écritures.
+6. Classification des anomalies : bloquante (unité inconnue, écart matériel non résolu, doublon, incohérence du périmètre) ou réserve (indicateur facultatif absent, détail insuffisant). Bloquer seulement les conclusions affectées, fournir l'analyse saine restante. Fixer une tolérance de rapprochement compatible avec l'arrondi des sources, pas un seuil universel.
+
+PCG : pour des comparaisons franchissant 2025, vérifier les effets des modifications du résultat exceptionnel et des transferts de charges avant d'interpréter les variations. Source : https://www.anc.gouv.fr/plan-comptable-general-0 .
