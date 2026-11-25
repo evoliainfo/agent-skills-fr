@@ -14,7 +14,7 @@ Bibliothèque de compétences professionnelles en français pour assistants IA c
 | Analyse de rentabilité | Marges, coûts et décisions |
 | Reporting financier | Pilotage, KPI et reporting de direction |
 
-Version candidate préparée localement : 1.0.0-rc3. Les scripts de calcul sont intégrés aux compétences. Le transfert des sources et des fichiers distribuables dans ce dépôt reste à terminer. Les tests d’installation et de déclenchement natifs restent à réaliser. La compatibilité dépend de la plateforme et de ses capacités d’exécution de code.
+Version candidate préparée localement : 1.0.0-rc3. Les scripts de calcul sont intégrés aux compétences. Les sources et les fichiers distribuables RC3 sont présents dans les dossiers `finance/` et `distribution_RC3/`. Les tests d’installation et de déclenchement natifs restent à réaliser. La compatibilité dépend de la plateforme et de ses capacités d’exécution de code.
 
 Les archives installables et le guide seront disponibles via GitHub Releases après validation. Aucun droit de redistribution n’est accordé par ce document ; la licence reste à décider avant publication.
 
