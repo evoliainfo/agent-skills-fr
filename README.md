@@ -1,23 +1,48 @@
 # Agent Skills FR
 
-Bibliothèque de compétences professionnelles en français pour assistants IA compatibles avec Agent Skills.
+Des compétences métier en français pour les assistants IA : instructions, méthodes de travail, références et calculateurs spécialisés.
 
-**État : préparation privée — aucune version publique autorisée.**
+[Licence MIT](LICENSE) · Gratuit · Collection 01 : Finance & contrôle de gestion
 
-## Finance et contrôle de gestion
+> **Préversion 1.0.0-rc3 — édition MIT.** Les tests natifs d'installation et de déclenchement dans Claude, Cowork et ChatGPT restent à réaliser. Les résultats doivent être vérifiés avant usage professionnel.
 
-| Skill | Mission |
-|---|---|
-| Analyse financière | Diagnostic financier, SIG, CAF, BFR et ratios |
-| Contrôle budgétaire | Analyse des écarts et budgets flexibles |
-| Prévision de trésorerie | Prévision glissante et scénarios de liquidité |
-| Analyse de rentabilité | Marges, coûts et décisions |
-| Reporting financier | Pilotage, KPI et reporting de direction |
+## Télécharger
 
-Version candidate préparée localement : 1.0.0-rc3. Les scripts de calcul sont intégrés aux compétences. Les sources sont présentes dans `finance/`. L’édition RC3 avec licence MIT, le guide et les notes de publication sont disponibles dans [`distribution_RC3_MIT/`](distribution_RC3_MIT/). Le dossier `distribution_RC3/` conserve les archives historiques sans notice MIT intégrée. Les tests d’installation et de déclenchement natifs restent à réaliser. La compatibilité dépend de la plateforme et de ses capacités d’exécution de code.
+**[Pack Finance complet (ZIP)](distribution_RC3_MIT/Pack_Finance_RC3.zip)** · **[Guide d'installation (PDF)](distribution_RC3_MIT/Guide_installation_et_utilisation_Finance.pdf)**
 
-Les archives installables et le guide seront disponibles via GitHub Releases après validation. Les contenus originaux du projet sont proposés sous [licence MIT](LICENSE). L’utilisation, la modification et la redistribution, y compris commerciale, sont autorisées sous réserve de conserver la notice de copyright et la licence. Les contenus de tiers éventuellement cités restent soumis à leurs propres droits. Les cinq ZIP individuels et le pack complet de l’édition MIT contiennent désormais la notice de licence. Les skills constituent une aide à la décision et ne remplacent pas la validation d’un professionnel.
+Sur la page du fichier GitHub, utilisez l'option de téléchargement. Décompressez le pack complet pour retrouver les cinq ZIP individuels ; ne les décompressez pas pour l'import natif dans Claude.
 
-## Domaines prévus
+| Compétence | Ce qu'elle aide à faire | ZIP individuel |
+|---|---|---|
+| Analyse financière | SIG, CAF, BFR, FRNG, ratios et diagnostic | [Télécharger](distribution_RC3_MIT/Analyse_financiere_RC3.zip) |
+| Contrôle budgétaire | Comparer budget et réalisé, expliquer les écarts | [Télécharger](distribution_RC3_MIT/Controle_budgetaire_RC3.zip) |
+| Prévision de trésorerie | Projeter les flux et simuler les tensions de liquidité | [Télécharger](distribution_RC3_MIT/Prevision_de_tresorerie_RC3.zip) |
+| Analyse de rentabilité | Analyser marges, coûts, seuils et décisions | [Télécharger](distribution_RC3_MIT/Analyse_de_rentabilite_RC3.zip) |
+| Reporting financier | Produire une synthèse de gestion et des KPI | [Télécharger](distribution_RC3_MIT/Reporting_financier_RC3.zip) |
 
-Ressources humaines, développement commercial, marketing et acquisition, gestion de projet, direction et stratégie, achats et opérations. Ces domaines ne sont pas encore disponibles.
+## Commencer
+
+1. Choisissez la compétence adaptée à votre demande.
+2. Consultez le [guide PDF](distribution_RC3_MIT/Guide_installation_et_utilisation_Finance.pdf) et suivez le parcours adapté à votre compte.
+3. Fournissez vos documents autorisés et formulez votre demande.
+4. Vérifiez les sources, hypothèses, calculs et conclusions.
+
+Dans Claude, l'installation d'un skill personnalisé utilise un ZIP individuel. L'accès natif à Skills dans ChatGPT dépend de l'offre et des autorisations de l'espace. Le guide propose également un parcours alternatif avec des fichiers joints, qui ne constitue pas une installation native. Aucun terminal n'est nécessaire pour suivre ces parcours. Voir [l'aide Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude) et [l'aide ChatGPT](https://help.openai.com/en/articles/20001066-skills-in-chatgpt).
+
+## Comment sont construits les skills ?
+
+Chaque dossier sous [finance/](finance/) contient ses instructions SKILL.md, ses références métier, un calculateur Python et la licence MIT. Les scripts travaillent sur des données normalisées par l'assistant ; ils n'importent pas directement un ERP ou une liasse fiscale. L'exécution dépend des capacités de l'environnement.
+
+## Versions et contributions
+
+- [Notes de publication](distribution_RC3_MIT/Notes_de_publication.md)
+- [Empreintes SHA-256](distribution_RC3_MIT/empreintes.json)
+- [Signaler une erreur ou proposer une amélioration](https://github.com/evoliainfo/agent-skills-fr/issues)
+
+Le dossier distribution_RC3/ correspond à l'ancien conditionnement. Utilisez uniquement distribution_RC3_MIT/ pour les téléchargements de cette édition.
+
+## Licence et responsabilité
+
+MIT pour les contenus originaux du projet ; les contenus et références de tiers conservent leurs droits. Ces compétences sont des aides à la décision, et ne remplacent ni une certification des comptes ni le contrôle d'un professionnel. Ne transmettez que les documents autorisés.
+
+Les prochaines collections métier seront annoncées à mesure de leur préparation.

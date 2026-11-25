@@ -1,18 +1,17 @@
-# Finance et contrôle de gestion — 1.0.0-rc3 (édition MIT)
+# Finance & contrôle de gestion — 1.0.0-rc3 (édition MIT)
 
-Version candidate de distribution privée — non publiée.
+Préversion gratuite en français. Les tests d’installation et de déclenchement natifs sur Claude, Cowork et ChatGPT ne sont pas réalisés. Ne pas présenter cette édition comme une version validée sur toutes les plateformes.
 
-## Contenu
-Cinq skills en français : analyse financière, contrôle budgétaire, prévision de trésorerie, analyse de rentabilité et reporting financier. Chaque ZIP individuel contient un dossier Agent Skills, son SKILL.md, ses références, un calculateur Python et la notice MIT. Le pack complet réunit les cinq ZIP individuels, le guide PDF et la licence. Décompresser uniquement le pack complet avant import natif des ZIP individuels.
+## Téléchargement et installation
+- `Pack_Finance_RC3.zip` : les cinq archives individuelles, le guide PDF et la licence MIT. Décompresser le pack global, puis importer les ZIP individuels selon le guide.
+- Les cinq ZIP individuels permettent de choisir une seule compétence.
+- `Guide_installation_et_utilisation_Finance.pdf` : parcours Claude, Cowork, ChatGPT avec Skills et parcours alternatif par projet et fichiers joints.
 
-## Changements
-Ajout de la notice MIT aux cinq archives et au pack complet. Les 49 fichiers métier RC3 (instructions, références et scripts) sont strictement inchangés ; les métadonnées de version RC3 et le guide existant sont conservés. Cette édition de conditionnement remplace les archives historiques sans licence ; elle ne constitue pas une nouvelle version métier.
+## Contenu et modifications
+Analyse financière, contrôle budgétaire, prévision de trésorerie, analyse de rentabilité, reporting financier. Chaque compétence comprend des instructions, des références méthodologiques, un calculateur Python et une notice MIT. Les 49 fichiers métier RC3 sont inchangés depuis l’édition précédente ; seul le conditionnement, le guide et la documentation de distribution évoluent. Les 143 tests techniques mentionnés dans la recette antérieure ne sont pas réexécutés ici. Les schémas du guide ne sont pas des captures réelles.
 
-## Validation et limites
-Les 49 fichiers métier ont été comparés octet par octet aux archives RC3 et aux sources précédemment préparées pour GitHub. CRC ZIP et présence de la licence contrôlés. Les 143 tests techniques sont ceux de la recette RC3 précédente ; ils ne sont pas présentés comme réexécutés lors de ce conditionnement. Les tests natifs d'installation et de déclenchement dans Claude, Cowork et ChatGPT ainsi que le benchmark comportemental restent à réaliser. Le guide comprend des schémas, pas des captures réelles. La compatibilité dépend du compte et des outils disponibles. Les compétences aident à la décision ; elles ne certifient pas les comptes.
-
-## Licence
-MIT pour les contenus originaux du projet. Les sources tierces citées restent soumises à leurs droits respectifs. Le contrôle juridique exhaustif de ces sources reste à effectuer avant diffusion publique.
+## Licence et limites
+MIT pour les contenus originaux. Les sources tierces citées conservent leurs droits respectifs ; leur vérification juridique exhaustive n’a pas été effectuée. Les skills sont une aide à la décision, non une certification des comptes. Les scripts nécessitent un environnement d’exécution compatible et les données préalablement normalisées. Ne transmettez que des documents autorisés.
 
 ## Publication
-Tag proposé : `finance-v1.0.0-rc3-mit`. Statut proposé : préversion, sans publication publique tant que les vérifications restantes ne sont pas réalisées. Les fichiers de cette édition sont sous `distribution_RC3_MIT/` ; `distribution_RC3/` est historique. Les empreintes SHA-256 des fichiers distribuables figurent dans `empreintes.json`.
+Tag proposé : `finance-v1.0.0-rc3-mit`. Type : préversion. Le dossier `distribution_RC3_MIT/` est le dossier de distribution de référence ; `distribution_RC3/` est historique. Les empreintes SHA-256 figurent dans `empreintes.json`. La création effective de la Release et la visibilité publique sont des opérations distinctes de la préparation des fichiers.
