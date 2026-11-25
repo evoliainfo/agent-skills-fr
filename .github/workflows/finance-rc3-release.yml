@@ -1,0 +1,37 @@
+name: Prepare Finance RC3 MIT release
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/finance-rc3-release.yml']
+permissions:
+  contents: write
+concurrency:
+  group: finance-rc3-mit-release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TARGET: 5b11fa94cde5c6c83639df73c935133ddbe31e24
+      TAG: finance-v1.0.0-rc3-mit
+    steps:
+      - name: Create private repository prerelease
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GH_REPO" = evoliainfo/agent-skills-fr
+          test "$(gh api "repos/$GH_REPO" --jq .private)" = true
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release already exists; no changes made."
+            exit 0
+          fi
+          mkdir -p release-assets
+          cd release-assets
+          for file in Analyse_de_rentabilite_RC3.zip Analyse_financiere_RC3.zip Controle_budgetaire_RC3.zip Prevision_de_tresorerie_RC3.zip Reporting_financier_RC3.zip Pack_Finance_RC3.zip Guide_installation_et_utilisation_Finance.pdf LICENSE empreintes.json Notes_de_publication.md; do
+            gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GH_REPO/contents/distribution_RC3_MIT/$file?ref=$RELEASE_TARGET" > "$file"
+          done
+          gh release create "$TAG" ./*.zip ./*.pdf LICENSE empreintes.json --target "$RELEASE_TARGET" --title "Finance & contrôle de gestion — RC3 MIT" --notes-file Notes_de_publication.md --prerelease --latest=false
+          gh release view "$TAG" --json url,isPrerelease,isDraft,assets
