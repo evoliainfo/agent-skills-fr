@@ -16,7 +16,7 @@ Bibliothèque de compétences professionnelles en français pour assistants IA c
 
 Version candidate préparée localement : 1.0.0-rc3. Les scripts de calcul sont intégrés aux compétences. Les sources et les fichiers distribuables RC3 sont présents dans les dossiers `finance/` et `distribution_RC3/`. Les tests d’installation et de déclenchement natifs restent à réaliser. La compatibilité dépend de la plateforme et de ses capacités d’exécution de code.
 
-Les archives installables et le guide seront disponibles via GitHub Releases après validation. Aucun droit de redistribution n’est accordé par ce document ; la licence reste à décider avant publication.
+Les archives installables et le guide seront disponibles via GitHub Releases après validation. Les contenus originaux du projet sont proposés sous [licence MIT](LICENSE). L’utilisation, la modification et la redistribution, y compris commerciale, sont autorisées sous réserve de conserver la notice de copyright et la licence. Les contenus de tiers éventuellement cités restent soumis à leurs propres droits. Les archives RC3 historiques ne contiennent pas encore la notice MIT : les archives destinées à la publication devront l’inclure. Les skills constituent une aide à la décision et ne remplacent pas la validation d’un professionnel.
 
 ## Domaines prévus
 
