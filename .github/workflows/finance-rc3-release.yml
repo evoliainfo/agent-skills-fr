@@ -31,7 +31,8 @@ jobs:
           mkdir -p release-assets
           cd release-assets
           for file in Analyse_de_rentabilite_RC3.zip Analyse_financiere_RC3.zip Controle_budgetaire_RC3.zip Prevision_de_tresorerie_RC3.zip Reporting_financier_RC3.zip Pack_Finance_RC3.zip Guide_installation_et_utilisation_Finance.pdf LICENSE empreintes.json Notes_de_publication.md; do
-            gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GH_REPO/contents/distribution_RC3_MIT/$file?ref=$RELEASE_TARGET" > "$file"
+            gh api "repos/$GH_REPO/contents/distribution_RC3_MIT/$file?ref=$RELEASE_TARGET" --jq .content | base64 --decode > "$file"
           done
+          jq -r 'to_entries[] | "\(.value)  \(.key)"' empreintes.json | sha256sum --check
           gh release create "$TAG" ./*.zip ./*.pdf LICENSE empreintes.json --target "$RELEASE_TARGET" --title "Finance & contrôle de gestion — RC3 MIT" --notes-file Notes_de_publication.md --prerelease --latest=false
           gh release view "$TAG" --json url,isPrerelease,isDraft,assets
